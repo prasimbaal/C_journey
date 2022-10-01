@@ -5,7 +5,7 @@ int main(void)
 {
     char x = 'A';
     printf("X:");
-    scanf("%s",&x);
+    scanf("%s", &x);
     printf("ASCII CODE of given character: %d \n", x);
     return 0;
     

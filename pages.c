@@ -1,21 +1,24 @@
 /*This code navigates through pages of a book 
  *page numbber has to be greater than 0 
  *the book has only 250 pages */
+
 #include <stdio.h>
+#include <string.h>
+
 
 int main()
 {
-    int page_no = 1;
 
-    puts("Which page would you like to navigate towards: ");
-    scanf("%i",&page_no);
+	char stuff[][15] = {"joy stick", "jug", "laptop", "phone", "passport", "back pack"};
+	char look_for[10];
 
-    if (page_no < 1) {
-	printf("no such page exists \n");
-	return 1;
-    }
-    else if (page_no > 250) printf("This book only has 250 pages");
-    
-    else printf("Page %i contents \n", page_no);
-    return 0;
+	puts("Enter the stuff you are looking for:");
+	fgets(look_for, 10, stdin);
+
+	if (strstr(stuff, look_for))
+		printf("your %s have been found!! \n", look_for);
+
+	return 0;
+
 }
+

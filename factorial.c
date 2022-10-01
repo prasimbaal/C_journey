@@ -8,7 +8,7 @@ int main()
 	printf("This is a factorial calculator: ");
 	scanf("%d", &number);
 
-	printf("The factorial of %d is %d ", number, factorial(number));
+	printf("The factorial of %d is %d \n", number, factorial(number));
 	return 0;
 }
 
@@ -20,4 +20,5 @@ int factorial(int x)
 			fact = fact * x;
 			x--;
 		}
+	return fact;
 }

@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+	int number = 10;
+	int *np;
+
+	np = &number;
+
+	printf("Address of variable %x \n", number);
+	printf("Address of pointer variable %x \n", np);
+	printf("value of *ip variable %d\n", *np);
+
+	return 0;
+}

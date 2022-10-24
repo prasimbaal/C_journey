@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+  int len;
+  char message[len],temp;
+  int i=0;
+  printf("Enter length of string");
+  scanf("%d",&len);
+  printf("Enter string: ");
+  scanf("%s",&message);
+  while(message!='/0'){
+    message++;
+    i++;
+  }
+  length=i-1;
+  int j;
+  for(j=0;j<=i/2;j++){
+    temp=message[j];
+    
+    
+    
+  return 0;
+}
+  
